@@ -72,7 +72,25 @@ def array_front9(nums):
         return True
     return False
     
-
+def array123(nums):
+    for i in range(len(nums)):
+        if i+2<len(nums):
+            if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+                return True
+    return False
+            
+def string_match(a, b):
+    index = 0
+    counter = 0
+    if len(a)>len(b):
+        index = len(b)
+    else:
+        index = len(a)
+    for i in range(index):
+        if i+1 < index:
+            if a[i]==b[i] and a[i+1]==b[i+1]:
+                counter = counter+1
+    return counter
 
 ##Call the method
-print(array_front9({1,2,3,4}))
+print(string_match("aew", "aeeqwe"))
