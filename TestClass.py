@@ -57,7 +57,11 @@ def pos_neg(a, b, negative):
     else:
         return False
         
+def not_string(str):
+    if str.startswith("not"):
+        return str
+    else:
+        return "not "+str
 
 ##Call the method
-print(pos_neg(-3,-33,True))
-    
+print(not_string("nootTest"))
