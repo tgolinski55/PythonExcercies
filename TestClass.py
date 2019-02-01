@@ -40,7 +40,13 @@ def makes10(a, b):
         return True
     else:
         return False
-        
+
+def near_hundred(n):
+    if abs(100-n<=10) or abs(200-n<=10):
+        return True
+    else:
+        return False     
+
 ##Call the method
-print(makes10(4,10))
+print(near_hundred(189))
     
