@@ -15,7 +15,12 @@ def monkey_trouble(a_smile, b_smile):
     else:
         return False
 
+def sum_double(a, b):
+    if not a == b:
+        return a+b
+    else:
+        return 2*(a+b)
 
 ##Call the method
-print(sleep_in(True,True))
+print(sum_double(2,2))
     
