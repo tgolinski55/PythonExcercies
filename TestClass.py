@@ -63,5 +63,16 @@ def not_string(str):
     else:
         return "not "+str
 
+def array_front9(nums):
+    index = len(nums)
+    if index > 4:
+        index = 4
+    for i in range(index):
+      if nums[i]==9:
+        return True
+    return False
+    
+
+
 ##Call the method
-print(not_string("nootTest"))
+print(array_front9({1,2,3,4}))
