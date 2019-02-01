@@ -28,11 +28,19 @@ def diff21(n):
         return -2*(21-n)
 
 def parrot_trouble(talking, hour):
-    if talking and hour<7 or hour>20:
+    if talking and (hour<7 or hour>20):
         return True
     else:
         return False
 
+def makes10(a, b):
+    if a ==10 or b == 10:
+        return True
+    elif a+b==10:
+        return True
+    else:
+        return False
+        
 ##Call the method
-print(parrot_trouble(True, 13))
+print(makes10(4,10))
     
