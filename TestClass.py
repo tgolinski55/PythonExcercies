@@ -21,6 +21,12 @@ def sum_double(a, b):
     else:
         return 2*(a+b)
 
+def diff21(n):
+    if n<=21:
+        return 21-n
+    else:
+        return -2*(21-n)
+
 ##Call the method
-print(sum_double(2,2))
+print(diff21(23))
     
