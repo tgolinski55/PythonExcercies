@@ -7,5 +7,15 @@ def sleep_in(weekday, vacation):
     else:
         return False
 
+def monkey_trouble(a_smile, b_smile):
+    if a_smile and b_smile:
+        return True
+    elif not a_smile and not b_smile:
+        return True
+    else:
+        return False
+
+
+##Call the method
 print(sleep_in(True,True))
     
