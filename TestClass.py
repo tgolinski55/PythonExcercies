@@ -27,6 +27,12 @@ def diff21(n):
     else:
         return -2*(21-n)
 
+def parrot_trouble(talking, hour):
+    if talking and hour<7 or hour>20:
+        return True
+    else:
+        return False
+
 ##Call the method
-print(diff21(23))
+print(parrot_trouble(True, 13))
     
