@@ -141,5 +141,22 @@ def non_start(a, b):
 def left2(str):
     starts = str[:2]
     return str[2:]+starts
+
+### LIST 1 ###
+def first_last6(nums):
+    if nums[0]==6 or nums[len(nums)-1]==6:
+        return True
+    return False
+
+def same_first_last(nums):
+    if len(nums)>0:
+        first = nums[0]
+        last = nums[len(nums)-1]
+        if first==last:
+            return True
+        else:
+            return False
+    else:
+        return False
 ##Call the method
-print(combo_string("to","test"))
+print(same_first_last([1,2,3]))
