@@ -92,6 +92,7 @@ def string_match(a, b):
                 counter = counter+1
     return counter
 
+### STRING 1 ###
 def hello_name(name):
     return "Hello "+name+"!"
 
@@ -103,5 +104,9 @@ def make_tags(tag, word):
 
 def make_out_word(out, word):
     return out[0]+out[1]+word+out[2]+out[3]
+
+def extra_end(str):
+    end = str[-2:]
+    return 3*end
 ##Call the method
-print(make_abba("Tomek","Cool"))
+print(extra_end("Tomek"))
