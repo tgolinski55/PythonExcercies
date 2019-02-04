@@ -92,5 +92,10 @@ def string_match(a, b):
                 counter = counter+1
     return counter
 
+def hello_name(name):
+    return "Hello "+name+"!"
+
+def make_abba(a,b):
+    return a+b+b+a
 ##Call the method
-print(string_match("aew", "aeeqwe"))
+print(make_abba("Tomek","Cool"))
