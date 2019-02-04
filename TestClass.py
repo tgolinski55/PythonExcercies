@@ -118,5 +118,28 @@ def first_two(str):
 def first_half(str):
     mid = int(len(str)/2)
     return str[:mid]
+
+def without_end(str):
+    mid = str[1:]
+    mid = mid[:-1]
+    return mid
+
+def combo_string(a,b):
+    if len(a)>0 and len(b)>0:
+        if len(a)>len(b):
+            return b+a+b
+        else:
+            return a+b+a
+    elif len(a)==0:
+        return b
+    elif len(b)==0:
+        return a
+
+def non_start(a, b):
+    return a[1:]+b[1:]
+
+def left2(str):
+    starts = str[:2]
+    return str[2:]+starts
 ##Call the method
-print(first_half("Tomeke"))
+print(combo_string("to","test"))
