@@ -100,5 +100,8 @@ def make_abba(a,b):
 
 def make_tags(tag, word):
     return "<"+tag+">"+word+"</"+tag+">"
+
+def make_out_word(out, word):
+    return out[0]+out[1]+word+out[2]+out[3]
 ##Call the method
 print(make_abba("Tomek","Cool"))
