@@ -108,5 +108,11 @@ def make_out_word(out, word):
 def extra_end(str):
     end = str[-2:]
     return 3*end
+
+def first_two(str):
+    if len(str)>2:
+        return str[:2]
+    else:
+        return str    
 ##Call the method
 print(extra_end("Tomek"))
