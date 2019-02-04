@@ -114,5 +114,9 @@ def first_two(str):
         return str[:2]
     else:
         return str    
+
+def first_half(str):
+    mid = int(len(str)/2)
+    return str[:mid]
 ##Call the method
-print(extra_end("Tomek"))
+print(first_half("Tomeke"))
