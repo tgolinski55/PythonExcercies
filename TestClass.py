@@ -201,5 +201,17 @@ def max_end3(nums):
     if nums[len(nums)-1]>nums[0]:
         tempArr = [nums[len(nums)-1],nums[len(nums)-1],nums[len(nums)-1]]
     return tempArr
+
+def sum2(nums):
+    sumVal = 0
+    if len(nums)>1:
+        return nums[0] + nums[1]
+    elif len(nums) == 0:
+        return 0
+    elif len(nums)<2:
+        for n in range(len(nums)):
+            sumVal = sumVal + nums[n]
+        return sumVal
+            
 ##Call the method
-print(max_end3([3,2,5]))
+print(sum2([2]))
