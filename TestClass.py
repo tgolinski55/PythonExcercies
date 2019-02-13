@@ -167,5 +167,13 @@ def common_end(a, b):
     if a[0]==b[0] or a[len(a)-1]==b[len(b)-1]:
         return True
     return False
+
+def sum3(nums):
+    sumVal = 0
+    for n in range(len(nums)):
+        sumVal += nums[n]
+    return sumVal
+
+
 ##Call the method
-print(common_end([1,3,2], [2,3,4,5,1]))
+print(sum3([1,2,3]))
