@@ -162,5 +162,10 @@ def same_first_last(nums):
 def make_pi():
     pir = [3,1,4]
     return pir
+
+def common_end(a, b):
+    if a[0]==b[0] or a[len(a)-1]==b[len(b)-1]:
+        return True
+    return False
 ##Call the method
-print(make_pi())
+print(common_end([1,3,2], [2,3,4,5,1]))
