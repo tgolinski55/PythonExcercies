@@ -162,11 +162,6 @@ def same_first_last(nums):
 def make_pi():
     pir = [3,1,4]
     return pir
-<<<<<<< Updated upstream
-    
-##Call the method
-print(make_pi())
-=======
 
 def common_end(a, b):
     if a[0]==b[0] or a[len(a)-1]==b[len(b)-1]:
@@ -200,6 +195,11 @@ def reverse3(nums):
         if n == len(nums)-1:
             tempArr[2] = nums[0]
     return tempArr
+
+def max_end3(nums):
+    tempArr = [nums[0],nums[0],nums[0]]
+    if nums[len(nums)-1]>nums[0]:
+        tempArr = [nums[len(nums)-1],nums[len(nums)-1],nums[len(nums)-1]]
+    return tempArr
 ##Call the method
-print(reverse3([1,2,3]))
->>>>>>> Stashed changes
+print(max_end3([3,2,5]))
