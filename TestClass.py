@@ -162,6 +162,44 @@ def same_first_last(nums):
 def make_pi():
     pir = [3,1,4]
     return pir
+<<<<<<< Updated upstream
     
 ##Call the method
 print(make_pi())
+=======
+
+def common_end(a, b):
+    if a[0]==b[0] or a[len(a)-1]==b[len(b)-1]:
+        return True
+    return False
+
+def sum3(nums):
+    sumVal = 0
+    for n in range(len(nums)):
+        sumVal += nums[n]
+    return sumVal
+
+def rotate_left3(nums):
+    tempArr = [0,0,0]
+    for n in range(len(nums)):
+        if n == 0:
+            tempArr[1] = nums[len(nums)-1]
+        if n+1<=len(nums)-1 and n>0:
+            tempArr[0] = nums[n]
+        if n == len(nums)-1:
+            tempArr[2] = nums[0]
+    return tempArr
+
+def reverse3(nums):
+    tempArr = [0,0,0]
+    for n in range(len(nums)):
+        if n == 0:
+            tempArr[0] = nums[len(nums)-1]
+        if n+1<=len(nums)-1 and n>0:
+            tempArr[1] = nums[n]
+        if n == len(nums)-1:
+            tempArr[2] = nums[0]
+    return tempArr
+##Call the method
+print(reverse3([1,2,3]))
+>>>>>>> Stashed changes
