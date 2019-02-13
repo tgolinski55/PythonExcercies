@@ -216,6 +216,12 @@ def sum2(nums):
 def middle_way(a,b):
     midVal = [a[1],b[1]]
     return midVal
-    
+
+def make_ends(nums):
+    first = nums[0]
+    last = nums[len(nums)-1]
+    tempArr = [first, last]
+    return tempArr
+
 ##Call the method
 print(sum2([2]))
