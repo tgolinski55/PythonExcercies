@@ -213,5 +213,9 @@ def sum2(nums):
             sumVal = sumVal + nums[n]
         return sumVal
             
+def middle_way(a,b):
+    midVal = [a[1],b[1]]
+    return midVal
+    
 ##Call the method
 print(sum2([2]))
