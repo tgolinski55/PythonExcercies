@@ -184,5 +184,49 @@ def rotate_left3(nums):
         if n == len(nums)-1:
             tempArr[2] = nums[0]
     return tempArr
+<<<<<<< HEAD
 ##Call the method
 print(rotate_left3([1,2,3]))
+=======
+
+def reverse3(nums):
+    tempArr = [0,0,0]
+    for n in range(len(nums)):
+        if n == 0:
+            tempArr[0] = nums[len(nums)-1]
+        if n+1<=len(nums)-1 and n>0:
+            tempArr[1] = nums[n]
+        if n == len(nums)-1:
+            tempArr[2] = nums[0]
+    return tempArr
+
+def max_end3(nums):
+    tempArr = [nums[0],nums[0],nums[0]]
+    if nums[len(nums)-1]>nums[0]:
+        tempArr = [nums[len(nums)-1],nums[len(nums)-1],nums[len(nums)-1]]
+    return tempArr
+
+def sum2(nums):
+    sumVal = 0
+    if len(nums)>1:
+        return nums[0] + nums[1]
+    elif len(nums) == 0:
+        return 0
+    elif len(nums)<2:
+        for n in range(len(nums)):
+            sumVal = sumVal + nums[n]
+        return sumVal
+            
+def middle_way(a,b):
+    midVal = [a[1],b[1]]
+    return midVal
+
+def make_ends(nums):
+    first = nums[0]
+    last = nums[len(nums)-1]
+    tempArr = [first, last]
+    return tempArr
+
+##Call the method
+print(sum2([2]))
+>>>>>>> Logic-1
