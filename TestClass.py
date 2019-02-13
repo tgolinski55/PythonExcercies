@@ -174,6 +174,15 @@ def sum3(nums):
         sumVal += nums[n]
     return sumVal
 
-
+def rotate_left3(nums):
+    tempArr = [0,0,0]
+    for n in range(len(nums)):
+        if n == 0:
+            tempArr[1] = nums[len(nums)-1]
+        if n+1<=len(nums)-1 and n>0:
+            tempArr[0] = nums[n]
+        if n == len(nums)-1:
+            tempArr[2] = nums[0]
+    return tempArr
 ##Call the method
-print(sum3([1,2,3]))
+print(rotate_left3([1,2,3]))
