@@ -235,5 +235,13 @@ def cigar_party(cigars, is_weekend):
     if is_weekend and cigars>=40:
         return True
     return False
+
+def date_fashion(you, date):
+    val = 1
+    if you>=8 or date>=8:
+        val = 2
+    if you<=2 or date<=2:
+        val = 0
+    return val
 ##Call the method
 print(cigar_party(115, True))
