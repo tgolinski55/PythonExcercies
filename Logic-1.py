@@ -20,3 +20,22 @@ def sorta_sum(a, b):
         return 20
     else:
         return sumVal
+    
+def alarm_clock(day, vacation):
+    if vacation:
+        if not day==0 and not day==6:
+            return "10:00"
+        else:
+            return "off"
+    else:
+        if not day==0 and not day==6:
+            return "7:00"
+        else:
+            return "10:00"
+
+def love6(a, b):
+    if a==6 or b==6:
+        return True
+    if abs(a-b)==6 or a+b==6:
+        return True
+    return False
