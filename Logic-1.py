@@ -13,3 +13,10 @@ def caught_speeding(speed, is_birthday):
             return 2
         if speed<=60:
             return 0
+
+def sorta_sum(a, b):
+    sumVal = a+b
+    if sumVal>=10 and sumVal<=19:
+        return 20
+    else:
+        return sumVal
