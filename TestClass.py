@@ -184,10 +184,6 @@ def rotate_left3(nums):
         if n == len(nums)-1:
             tempArr[2] = nums[0]
     return tempArr
-<<<<<<< HEAD
-##Call the method
-print(rotate_left3([1,2,3]))
-=======
 
 def reverse3(nums):
     tempArr = [0,0,0]
@@ -254,9 +250,4 @@ def squirrel_play(temp, is_summer):
     else:
         return (temp<=90 and temp>=60)
 ##Call the method
-<<<<<<< HEAD
-print(sum2([2]))
->>>>>>> Logic-1
-=======
 print(squirrel_play(66,True))
->>>>>>> Logic-1

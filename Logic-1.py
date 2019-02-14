@@ -39,3 +39,9 @@ def love6(a, b):
     if abs(a-b)==6 or a+b==6:
         return True
     return False
+
+def in1to10(n, outside_mode):
+    if outside_mode:
+        return (n<=1 or n>=10)
+    else:
+        return (n>=1 and n<=10)
