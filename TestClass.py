@@ -228,5 +228,12 @@ def has23(nums):
         if nums[n] == 2 or nums[n] == 3:
             return True
     return False
+
+def cigar_party(cigars, is_weekend):
+    if cigars>=40 and cigars<=60 and not is_weekend:
+        return True
+    if is_weekend and cigars>=40:
+        return True
+    return False
 ##Call the method
-print(sum2([2]))
+print(cigar_party(115, True))
