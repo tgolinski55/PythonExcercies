@@ -232,6 +232,31 @@ def has23(nums):
         if nums[n] == 2 or nums[n] == 3:
             return True
     return False
+
+def cigar_party(cigars, is_weekend):
+    if cigars>=40 and cigars<=60 and not is_weekend:
+        return True
+    if is_weekend and cigars>=40:
+        return True
+    return False
+
+def date_fashion(you, date):
+    val = 1
+    if you>=8 or date>=8:
+        val = 2
+    if you<=2 or date<=2:
+        val = 0
+    return val
+
+def squirrel_play(temp, is_summer):
+    if is_summer:
+        return (temp<=100 and temp>=60)
+    else:
+        return (temp<=90 and temp>=60)
 ##Call the method
+<<<<<<< HEAD
 print(sum2([2]))
+>>>>>>> Logic-1
+=======
+print(squirrel_play(66,True))
 >>>>>>> Logic-1
