@@ -45,3 +45,9 @@ def in1to10(n, outside_mode):
         return (n<=1 or n>=10)
     else:
         return (n>=1 and n<=10)
+
+def near_ten(num):
+    vale = num%10
+    if 10-vale <=2 or abs(vale-10) <=2 or vale<=2:
+        return True
+    return False
