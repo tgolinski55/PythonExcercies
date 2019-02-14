@@ -243,5 +243,11 @@ def date_fashion(you, date):
     if you<=2 or date<=2:
         val = 0
     return val
+
+def squirrel_play(temp, is_summer):
+    if is_summer:
+        return (temp<=100 and temp>=60)
+    else:
+        return (temp<=90 and temp>=60)
 ##Call the method
-print(cigar_party(115, True))
+print(squirrel_play(66,True))
