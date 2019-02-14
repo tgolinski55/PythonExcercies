@@ -227,6 +227,11 @@ def make_ends(nums):
     tempArr = [first, last]
     return tempArr
 
+def has23(nums):
+    for n in range(len(nums)):
+        if nums[n] == 2 or nums[n] == 3:
+            return True
+    return False
 ##Call the method
 print(sum2([2]))
 >>>>>>> Logic-1
