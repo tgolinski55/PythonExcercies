@@ -51,3 +51,19 @@ def near_ten(num):
     if 10-vale <=2 or abs(vale-10) <=2 or vale<=2:
         return True
     return False
+
+def lone_sum(a,b,c):
+    if not a==b and not a==c and not b==c:
+        return a+b+c
+    if a==b:
+        if not a==c:
+            return c
+    if a==c:
+        if not a==b:
+            return b
+    if b==c:
+        if not a==b:
+            return a
+    return 0
+
+print(lone_sum(3,3,3))
