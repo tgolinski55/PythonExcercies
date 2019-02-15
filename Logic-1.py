@@ -66,4 +66,8 @@ def lone_sum(a,b,c):
             return a
     return 0
 
+def lucky_sum(a, b, c):
+    sum = 0
+    return sum
+
 print(lone_sum(3,3,3))
