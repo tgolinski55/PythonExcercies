@@ -249,5 +249,13 @@ def squirrel_play(temp, is_summer):
         return (temp<=100 and temp>=60)
     else:
         return (temp<=90 and temp>=60)
+
+def make_bricks(small, big, goal):
+    if goal>big*5+small:
+        return False
+    if goal%5>small:
+        return False
+    return True
+
 ##Call the method
-print(squirrel_play(66,True))
+print(make_bricks(3,2,9))
