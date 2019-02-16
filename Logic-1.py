@@ -67,7 +67,16 @@ def lone_sum(a,b,c):
     return 0
 
 def lucky_sum(a, b, c):
-    sum = 0
-    return sum
+    # if a != 13 and b != 13 and c!=13:
+    #     return a+b+c
+    if a!=13:
+        if b!=13:
+            if c!=13:
+                return a+b+c
+            else:
+                return a+b
+        else:
+            return a
+    return 0        
 
-print(lone_sum(3,3,3))
+print(lucky_sum(33,13,3))
