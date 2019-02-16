@@ -79,4 +79,30 @@ def lucky_sum(a, b, c):
             return a
     return 0        
 
-print(lucky_sum(33,13,3))
+def no_teen_sum(a, b, c):
+    sumVal = 0
+    if a>=13 and a<=19:
+        if a!=15 and a!=16:
+            sumVal += 0
+        else:
+            sumVal += a
+    else:
+        sumVal+=a
+
+    if b>=13 and b<=19:
+        if b!=15 and b!=16:
+            sumVal += 0
+        else:
+            sumVal += b
+    else:
+        sumVal += b    
+    if c>=13 and c<=19:
+        if c!=15 and c!=16:
+            sumVal += 0
+        else:
+            sumVal += c
+    else:
+        sumVal+=c
+    return sumVal
+    
+print(no_teen_sum(1,2,3))
