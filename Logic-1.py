@@ -113,5 +113,12 @@ def no_teen_sum(a, b, c):
         sumVal += c
     return sumVal
 
+def round_sum(a, b, c):
+    if (a+b+c)%10 == 0:
+        return a+b+c
+    else:
 
-print(no_teen_sum(1, 2, 3))
+def round10(num):
+    
+
+print(round_sum(5, 2, 3))
