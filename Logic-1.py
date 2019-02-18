@@ -117,8 +117,13 @@ def round_sum(a, b, c):
     if (a+b+c)%10 == 0:
         return a+b+c
     else:
+        return round10(a) + round10(b) + round10(c)
 
 def round10(num):
-    
+    vale = num % 10
+    diff = 10 - vale
+    if 10-vale <= 5 or abs(vale-10) <= 5:
+        return num + diff
+    return num - vale
 
-print(round_sum(5, 2, 3))
+print(round_sum(23,11,13))
