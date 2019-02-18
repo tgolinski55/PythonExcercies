@@ -126,4 +126,16 @@ def round10(num):
         return num + diff
     return num - vale
 
-print(round_sum(23,11,13))
+def close_far(a, b, c):
+    close = b
+    far = c
+    if a>0:
+        if c/a<=1:
+            close = c
+        if abs(b%a)>=2:
+            far = b
+        if close-a<=1 and abs(far-a)>=2 and abs(far-close)>=2:
+            return True
+    return False
+
+print(close_far(4,1,3))
