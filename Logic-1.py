@@ -127,15 +127,22 @@ def round10(num):
     return num - vale
 
 def close_far(a, b, c):
-    close = b
-    far = c
-    if a>0:
-        if c/a<=1:
-            close = c
-        if abs(b%a)>=2:
-            far = b
-        if close-a<=1 and abs(far-a)>=2 and abs(far-close)>=2:
-            return True
+    close = 0
+    far = 0
+    if abs(c-a)<=1:
+        close = c
+    elif abs(b-a)<=1:
+        close = b
+    else:
+        return False
+    if abs(b-a)>=2:
+        far = b
+    elif abs(c-a)>=2:
+        far = c
+    else:
+        return False
+    if close-a<=1 and abs(far-a)>=2 and abs(far-close)>=2:
+        return True
     return False
 
-print(close_far(4,1,3))
+print(close_far(4,5,3))
