@@ -145,4 +145,11 @@ def close_far(a, b, c):
         return True
     return False
 
-print(close_far(4,5,3))
+def make_chocolate(small, big, goal):  
+    if goal-big*5<=small and goal%5<=small:
+        if goal-big*5<0:
+            return goal%5
+        return goal-big*5
+    else:
+        return -1
+print(make_chocolate(6,2,7))
