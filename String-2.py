@@ -24,12 +24,6 @@ def cat_dog(str):
     else:
         return False
 
-# Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count.
-
-# count_code('aaacodebbb') → 1
-# count_code('codexxcode') → 2
-# count_code('cozexxcope') → 2
-
 def count_code(str):
     countStr = 0
     for i in range(len(str)-3):
@@ -37,4 +31,11 @@ def count_code(str):
             countStr += 1
     return countStr
 
-print(count_code("cozexxcope"))
+def end_other(a, b):
+    if b[-len(a):].lower() == a.lower() or a[-len(b):].lower() == b.lower():
+        return True
+    else:
+        return False
+
+
+print(end_other("AbC", "HiaBc"))
