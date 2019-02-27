@@ -37,5 +37,12 @@ def end_other(a, b):
     else:
         return False
 
+def xyz_there(str):
+    for i in range(len(str)-2):
+        if str[i:i+3] == "xyz":
+            if str[i-1]!=".":
+                return True
+    return False
+            
 
-print(end_other("AbC", "HiaBc"))
+print(xyz_there("abc.xyzxyz"))
