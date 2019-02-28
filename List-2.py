@@ -5,4 +5,7 @@ def count_evens(nums):
             count+=1
     return count
 
-print(count_evens([1,2,3,5,2]))
+def big_diff(nums):
+    return max(nums)-min(nums)
+
+print(big_diff([1,2,3,5,2]))
